@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Homestad Helper</title>
+        <title>Homestead Helper</title>
         <meta name="description" content="Homestead Helper" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
