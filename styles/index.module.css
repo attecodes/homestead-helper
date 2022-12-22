@@ -1,0 +1,13 @@
+.container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.button {
+  padding: 1.6rem;
+  background-color: darkgoldenrod;
+}

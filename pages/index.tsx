@@ -1,23 +1,21 @@
-import Head from "next/head";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+// import Head from "next/head";
+// import { Inter } from "@next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+
+import styles from "../styles/index.module.css";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Homestead Helper</title>
-        <meta name="description" content="Homestead Helper" />
+    <div className={styles.container}>
+      {/* <Head>
+        <title>Dewindt Farms</title>
+        <meta name="description" content="Dewindt Farms" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <h1>Homestead Helper</h1>
-        </div>
-      </main>
-    </>
+      </Head> */}
+      <h1>Welcome to Dewindt Farms</h1>
+      <button className={styles.button}>Buy Chicken</button>
+    </div>
   );
 }
