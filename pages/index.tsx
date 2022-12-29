@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {/* <Head>
-        <title>Dewindt Farms</title>
-        <meta name="description" content="Dewindt Farms" />
+        <title>The Shop</title>
+        <meta name="description" content="The Shop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
-      <h1>Welcome to Dewindt Farms</h1>
-      <button className={styles.button}>Buy Chicken</button>
+      <h1>Welcome to the shop</h1>
+      <button className={styles.button}>Buy Product</button>
     </div>
   );
 }
