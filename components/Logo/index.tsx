@@ -3,7 +3,7 @@ import React from "react";
 // import styles from "./styles.module.css";
 
 const Logo = () => {
-  return <div>The Shop</div>;
+  return <div>Dewindt Farms</div>;
 };
 
 export default Logo;

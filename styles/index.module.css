@@ -8,6 +8,15 @@
 }
 
 .button {
+  background: #556cd6;
+  color: white;
   padding: 1.6rem;
-  background-color: darkgoldenrod;
+  border-radius: 0.2rem;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+.button:hover {
+  opacity: 0.8;
 }

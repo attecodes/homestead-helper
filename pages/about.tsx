@@ -31,7 +31,7 @@ export default function About() {
           old beat up cow pasture and turn it into our personal backyard grocery
           store! 🚜🌾🐔
         </p>
-        <Image className={styles.image} src={ChickenCoop} alt="The Shop" />
+        <Image className={styles.image} src={ChickenCoop} alt="Dewindt Farms" />
       </div>
     </div>
   );
