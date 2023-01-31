@@ -1,0 +1,9 @@
+[
+  {
+    "id": 0,
+    "name": "Farm fresh eggs by the dozen",
+    "price": 20,
+    "image": "/dozen-eggs.jpeg",
+    "quantity": 1
+  }
+]

@@ -1,13 +1,12 @@
 import Image from "next/image";
-import ChickenCoop from "../public/chicken-coop.jpeg";
 
-import styles from "../styles/about.module.css";
+import ChickenCoop from "../public/chicken-coop.jpeg";
 
 export default function About() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.header}>About Us</h1>
-      <div className={styles.description}>
+    <div>
+      <h1 className="text-3xl font-semibold mb-4">About Us</h1>
+      <div className="flex flex-col gap-4 text-xl">
         <p>
           The moment that started it all !!! 1 year ago I harvested my first
           tomato out of my backyard. The feeling that came with this harvest was
@@ -31,7 +30,13 @@ export default function About() {
           old beat up cow pasture and turn it into our personal backyard grocery
           store! 🚜🌾🐔
         </p>
-        <Image className={styles.image} src={ChickenCoop} alt="Dewindt Farms" />
+        <div className="aspect-w-16 aspect-h-9 relative w-full h-auto max-w-2xl m-auto mb-8">
+          <Image
+            src={ChickenCoop}
+            alt="Picture of a mobile chicken coop on Dewindt Farms"
+            style={{ objectFit: "cover", borderRadius: "1rem" }}
+          />
+        </div>
       </div>
     </div>
   );
