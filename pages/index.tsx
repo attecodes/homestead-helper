@@ -39,7 +39,7 @@ export default function Home() {
     //   </form>
     // </div>
     <div>
-      <h1 className="text-4xl font-semibold text-center">Our Products</h1>
+      <h1 className="text-4xl font-semibold text-center mt-4">Our Products</h1>
       <div className="grid justify-center mt-4">
         {data.map((product) => (
           <Product key={product.id} product={product} />
