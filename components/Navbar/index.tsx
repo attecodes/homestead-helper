@@ -4,10 +4,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { Bars3Icon, ShoppingCartIcon } from "@heroicons/react/24/solid";
-import Logo from "../Logo";
+
+import { useRecoilValue } from "recoil";
+import { cartStateStats } from "atoms/cartState";
+
+import Logo from "components/Logo";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const { cartTotalQuantity } = useRecoilValue(cartStateStats);
   const router = useRouter();
   return (
     <>
@@ -36,7 +41,7 @@ export default function Navbar() {
                 <div className="relative">
                   <ShoppingCartIcon className="ml-2  h-8 w-8" />
                   <span className="absolute -top-2 -right-2 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white">
-                    0
+                    {cartTotalQuantity}
                   </span>
                 </div>
               </Link>
@@ -88,7 +93,7 @@ export default function Navbar() {
                   <div className="relative">
                     <ShoppingCartIcon className="ml-2  h-8 w-8" />
                     <span className="absolute -top-2 -right-2 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white">
-                      0
+                      {cartTotalQuantity}
                     </span>
                   </div>
                 </Link>

@@ -11,21 +11,21 @@ export default async function handler(
 ) {
   if (req.method === "POST") {
     try {
+      const items = JSON.parse(req.body);
       // Create Checkout Sessions from body params.
       const session = await stripe.checkout.sessions.create({
         line_items: [
           {
             // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-            price: "price_1MKRD5HHlwB9cZvMLZTCxmSN",
-            quantity: 1,
+            price: "price_1MWiGeHHlwB9cZvMgq8YekUN",
+            quantity: items[0].quantity,
           },
         ],
         mode: "payment",
         success_url: `${req.headers.origin}/?success=true`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
       });
-      // @ts-ignore (for now)
-      res.redirect(303, session.url);
+      res.json({ sessionId: session.id });
     } catch (err) {
       // @ts-ignore (for now)
       res.status(err.statusCode || 500).json(err.message);

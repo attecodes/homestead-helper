@@ -5,7 +5,7 @@ import ChickenCoop from "../public/chicken-coop.jpeg";
 export default function About() {
   return (
     <div>
-      <h1 className="text-3xl font-semibold mb-4">About Us</h1>
+      <h1 className="text-4xl font-semibold text-center mb-4">About Us</h1>
       <div className="flex flex-col gap-4 text-xl">
         <p>
           The moment that started it all !!! 1 year ago I harvested my first
